@@ -6,7 +6,7 @@ xunit 2.x now enables parallel testing by default. [According to the docs](https
 
 The recommend approach is now to take a dependency on `ITestOutputHelper` on your test class.
 
-But what if you are using a library with logging support, perhaps a 3rd party one, and you want to capture it's log output that is related to your test?
+But what if you are using a library with logging support, perhaps a 3rd party one, and you want to capture its log output that is related to your test?
 
 Because logging is considered a cross-cutting concern, the _typical_ usage is to declare a logger as a static shared resource in a class:
 
@@ -20,7 +20,7 @@ Because logging is considered a cross-cutting concern, the _typical_ usage is to
         }
     }
 
-The issue here is that if this class is used in a concurrent way, it's log output will be interleaved.
+The issue here is that if this class is used in a concurrent way, its log output will be interleaved.
 
 ### Solution
 
